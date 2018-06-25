@@ -130,10 +130,27 @@ nav ul {
   width: 35%;
 }
 
+.info .title {
+  display: block;
+  padding: 1rem 2rem;
+  text-align: left;
+}
+
 .title {
   display: block;
   padding: 0.5rem;
   background-color: black;
   text-align: center;
   color: white;
+}
+
+/* footer */
+
+footer {
+  display: block;
+  padding: 2.5rem;
+  background-color: black;
+  text-align: left;
+  color: white;
+  margin-top: 4rem;
 }

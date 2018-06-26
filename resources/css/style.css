@@ -1,3 +1,7 @@
+html {
+  font-size: 16px;
+}
+
 body{
   font-family: helvetica;
   line-height: 1.4;
@@ -83,6 +87,12 @@ nav ul {
 
 }
 
+.tablet-nav {
+  text-align: center;
+  display: none;
+}
+
+
 /* products and contact info */
 
 .products {
@@ -116,7 +126,15 @@ nav ul {
   background-color: black;
   text-align: center;
   color: white;
+}
 
+.products-tablet {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: none;
 }
 
 /* Locations and Hours */
@@ -153,4 +171,41 @@ footer {
   text-align: left;
   color: white;
   margin-top: 4rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 12px;
+  }
+  .tablet-nav {
+    display: block;
+  }
+  nav ul {
+    display: none;
+  }
+  .products-tablet {
+    display: flex;
+  }
+  .product {
+    width: 47%;
+  }
+  .products {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .banner {
+    height: 15rem;
+  }
+  .headline h1 {
+    font-size: 1rem;
+  }
+  .headline h4 {
+    font-size: 0.77rem;
+  }
+  .headline {
+    padding: 1rem 0 1rem 2rem;
+    width: 100%;
+  }
 }
